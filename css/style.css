@@ -110,6 +110,18 @@ body {
   }
 }
 
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -156,4 +168,8 @@ body {
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+
+.btn-animated-from-bottom {
+  animation: moveFromBottom 0.7s ease-in;
 }
