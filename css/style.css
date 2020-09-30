@@ -209,15 +209,29 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem; }
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
   .card__side {
     background: orangered;
     color: #fff;
     font-size: 3rem;
     height: 50rem;
-    transition: all 1s; }
-  .card:hover .card__side {
+    transition: all 0.8s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background: orangered; }
+    .card__side--back {
+      background: green;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
     transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 .section-about {
   background: #f7f7f7;
