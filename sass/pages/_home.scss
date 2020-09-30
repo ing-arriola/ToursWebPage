@@ -14,4 +14,11 @@
     url(../img/nat-4.jpg);
 
   background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  /*selector for all direct child of section-features :)*/
+  & > * {
+    /* it's necessary add this to compase the skew added above */
+    transform: skewY(7deg);
+  }
 }
