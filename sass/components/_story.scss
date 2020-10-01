@@ -22,7 +22,9 @@
 
   &__img {
     height: 100%;
-    transform: translateX(-4rem);
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.5s;
   }
 
   &__text {
@@ -43,7 +45,20 @@
   }
 
   &:hover &__caption {
+    text-align: center;
     opacity: 1;
     transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 1rem;
+  }
+
+  &:hover &__shape {
+    background-color: rgba(0, 0, 0, 0.432);
+  }
+
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    /* this works on mozilla but it doesn't works on chrome :(
+    filter: blur(3px) brightness(80%);*/
   }
 }
