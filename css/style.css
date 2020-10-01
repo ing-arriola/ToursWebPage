@@ -105,6 +105,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-big {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -131,6 +134,12 @@ body {
   color: #777; }
   .btn--white::after {
     background: #fff; }
+
+.btn--green {
+  background: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background: #55c57a; }
 
 .btn::after {
   content: "";
@@ -318,7 +327,7 @@ body {
 
 .section-tours {
   background: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
 
 .row {
