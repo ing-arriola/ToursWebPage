@@ -373,6 +373,24 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.form__group:not(:lastchild) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background: rbga(#fff, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #df3b00; }
+
 .section-about {
   background: #f7f7f7;
   padding: 25rem 0;
@@ -408,6 +426,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
   height: 50rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
 
 .row {
   max-width: 114rem;
