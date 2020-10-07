@@ -132,4 +132,19 @@
   &__button:hover &__icon::before {
     transform: translateY(-0.3rem);
   }
+
+  /*When the button is checked, select the
+  adjacent sibling button and from button, select
+  the child icon*/
+  &__checkbox:checked + &__button &__icon {
+    background: transparent;
+  }
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
+  }
 }
